@@ -1966,6 +1966,128 @@ body.photo-lightbox-open {
   .feedback-modal-title{font-size:21px}
 }
 
+
+/* =====================================================
+   ТЕМНА ТЕМА — ПІДТРИМКА ПОРУЧ
+   Візуальна зміна без перебудови логіки застосунку.
+   ===================================================== */
+:root {
+  --bg:#071b2f;
+  --text:#f5f8fb;
+  --muted:#b8c4cf;
+  --border:rgba(255,255,255,.13);
+  --shadow:0 6px 20px rgba(0,0,0,.22);
+  --shadow-hover:0 12px 28px rgba(0,0,0,.32);
+}
+
+body {
+  background:linear-gradient(180deg,#06182a 0%,#071f38 48%,#06182a 100%);
+  color:var(--text);
+}
+
+.container {
+  background:transparent;
+}
+
+.page-heading-label { color:#d6e0e8; }
+.page-heading h2 { color:#ffffff; }
+.page-heading p { color:#b8c4cf; }
+
+.section-card,
+.category-card,
+.selected-section-title,
+.step-block,
+.subpoint-card,
+.message,
+.search-panel,
+.search-result {
+  background:linear-gradient(145deg,#0b2944 0%,#09223a 100%);
+  border-color:rgba(255,255,255,.13);
+  color:#f5f8fb;
+  box-shadow:0 6px 20px rgba(0,0,0,.24);
+}
+
+.section-name,
+.category-name,
+.selected-section-name,
+.subpoint-title,
+.search-result-title {
+  color:#ffffff;
+}
+
+.section-description,
+.category-description,
+.subpoint-text,
+.search-result-path,
+.search-result-snippet,
+.message,
+.search-status {
+  color:#c0ccd6;
+}
+
+.subpoint-number {
+  background:#123b61;
+  color:#ffffff;
+}
+
+.search-input {
+  color:#ffffff;
+  background:#06182a;
+  border-color:rgba(255,255,255,.18);
+}
+.search-input::placeholder { color:#93a3b2; }
+.search-clear { background:#123b61; color:#ffffff; }
+.search-empty {
+  background:#0b2944;
+  border-color:rgba(255,255,255,.18);
+  color:#b8c4cf;
+}
+.breadcrumb { color:#aebdca; }
+.breadcrumb button { color:#ffd500; }
+.breadcrumb-current { color:#ffffff; }
+.breadcrumb-separator { color:#718292; }
+
+.feedback-card {
+  background:linear-gradient(145deg,#0b2944 0%,#09223a 100%);
+  border-color:rgba(255,255,255,.13);
+}
+.feedback-card-title { color:#ffffff; }
+.feedback-card-text { color:#b8c4cf; }
+.feedback-arrow { color:#ffd500; }
+
+.feedback-overlay { background:rgba(0,8,18,.78); }
+.feedback-modal {
+  background:linear-gradient(145deg,#0b2944 0%,#071b2f 100%);
+  border-color:rgba(255,255,255,.16);
+}
+.feedback-modal-title { color:#ffffff; }
+.feedback-modal-intro { color:#b8c4cf; }
+.feedback-close { color:#ffffff; }
+.feedback-option {
+  background:#102f4d;
+  border-color:rgba(255,255,255,.14);
+  color:#ffffff;
+}
+.feedback-option:hover { background:#143b60; }
+.feedback-option-arrow { color:#ffd500; }
+.feedback-option-text { color:#b8c4cf; }
+.feedback-note {
+  background:#102f4d;
+  border-color:#d9b500;
+  color:#d7e0e7;
+}
+
+.footer {
+  border-color:rgba(255,255,255,.12);
+  color:#91a2b1;
+}
+
+@media(max-width:650px) {
+  .right-logo { width:48px; height:48px; }
+  .header-content { min-width:0; }
+  .header-title { font-size:21px; }
+}
+
 </style>
 
   <meta name="theme-color" content="#071b2f">
@@ -2007,6 +2129,12 @@ body.photo-lightbox-open {
       <div class="yellow-line"></div>
 
     </div>
+
+    <img
+      class="right-logo"
+      src="app-icon.png"
+      alt="Підтримка Поруч"
+    >
 </div>
 
 </header>
