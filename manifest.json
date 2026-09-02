@@ -12,7 +12,7 @@
     "window-controls-overlay",
     "standalone"
   ],
-  "background_color": "#071b2f",
+  "background_color": "#ffffff",
   "theme_color": "#071b2f",
   "orientation": "portrait",
   "icons": [
